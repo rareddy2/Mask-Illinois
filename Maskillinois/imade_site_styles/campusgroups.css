@@ -1,0 +1,276 @@
+/* light blue to royal recoloring */
+@media all {
+	[data-overlay].bg--primary:before {
+		background: #3c78d8;
+	}
+
+	.btn--primary,
+	.btn--primary:visited {
+		background: #3c78d8;
+		border-color: #3c78d8;
+	}
+
+	input[type="submit"] {
+		background: #3c78d8;
+	}
+
+	.accordion li.active .accordion__title {
+		background: #3c78d8;
+	}
+
+	.accordion li.active .accordion__content {
+		max-height: initial;
+	}
+
+		.accordion li.active .accordion__content ul {
+			margin-bottom: 20px !important;
+		}
+
+
+	.color--primary {
+		color: #3c78d8 !important;
+	}
+
+	a {
+		color: #3c78d8;
+	}
+
+	.bg--primary {
+		background: #3c78d8;
+	}
+
+	.alert.bg--primary {
+		border-color: #3c78d8;
+	}
+
+		.alert.bg--primary .alert__close {
+			color: #3c78d8;
+		}
+
+	a {
+		color: #3c78d8;
+	}
+
+	hr.short {
+		border-color: #3c78d8;
+	}
+
+	.bg--primary div:not([class*='feature']) .btn--primary .btn__text {
+		color: #3c78d8;
+	}
+
+	.bg--primary > .btn--primary .btn__text {
+		color: #3c78d8;
+	}
+
+	.checkmark:not([class*='bg-']) {
+		background: #3c78d8;
+	}
+
+	.bg--primary .boxed:not(.imagebg) a {
+		color: #3c78d8;
+	}
+
+	.bg--primary .boxed:not(.imagebg) .color--primary {
+		color: #3c78d8 !important;
+	}
+
+	.feature.feature--featured:after {
+		background: #3c78d8;
+	}
+
+	.imagebg:not(.image--light) .feature.bg--white a:not(.btn) {
+		color: #3c78d8;
+	}
+
+	.accordion-1 li.active .accordion__title {
+		border-color: #3c78d8;
+	}
+
+	.tabs li.active .tab__title {
+		color: #3c78d8;
+	}
+
+		.tabs li.active .tab__title span {
+			color: #3c78d8;
+		}
+
+	.tabs--folder .tabs > li.active {
+		border-top: 3px solid #3c78d8;
+	}
+
+	.loader {
+		border: 3px solid #3c78d8;
+	}
+
+	.process-1:before {
+		background: #3c78d8;
+	}
+
+	.process__item:after {
+		border: 2px solid #3c78d8;
+	}
+
+	.process-2:before {
+		background: #3c78d8;
+	}
+
+	.process-3 li .process__number {
+		border: 2px solid #3c78d8;
+	}
+
+		.process-3 li .process__number span {
+			color: #3c78d8;
+		}
+
+	.process-stepper > li.active:before,
+	.process-stepper > li.active:after {
+		background: #3c78d8;
+	}
+
+	button[type="submit"].btn--loading:after,
+	input[type="submit"][type="submit"].btn--loading:after {
+		background: #3c78d8;
+	}
+
+	.bg--primary button.btn.btn--primary {
+		color: #3c78d8;
+		border-color: #3c78d8;
+	}
+
+	.input-checkbox label:hover {
+		border-color: #3c78d8;
+	}
+
+	.input-checkbox label:before {
+		border: 1px solid #3c78d8;
+	}
+
+	.input-checkbox input:checked + label {
+		border-color: #3c78d8;
+		background: #3c78d8;
+	}
+
+	.input-checkbox.input-checkbox--switch label:hover:before {
+		border-color: #3c78d8;
+	}
+
+	.input-checkbox.input-checkbox--switch input:checked + label:before {
+		background: #3c78d8;
+		border-color: #3c78d8;
+	}
+
+	.input-radio label:hover {
+		border-color: #3c78d8;
+	}
+
+	.input-radio label:before {
+		border: 1px solid #3c78d8;
+	}
+
+	.input-radio input:checked + label {
+		border-color: #3c78d8;
+		background-color: #3c78d8;
+	}
+
+	.input-radio--innerlabel:hover {
+		border-color: #3c78d8;
+	}
+
+	.input-radio--innerlabel input:checked + label {
+		border-color: #3c78d8;
+		background: #3c78d8;
+	}
+
+	.bg--primary .input-radio--innerlabel.checked label {
+		color: #3c78d8;
+	}
+
+	.input-select:focus:after {
+		border-color: #3c78d8;
+	}
+
+	.input-select select:focus {
+		border-color: #3c78d8;
+	}
+
+	.input-number .input-number__controls > span:hover {
+		color: #3c78d8;
+	}
+
+	.picker .picker__day.picker__day--highlighted {
+		color: #3c78d8;
+	}
+
+	.picker .picker__day:hover {
+		color: #3c78d8;
+	}
+
+	.progress-horizontal__progress {
+		background: #3c78d8;
+	}
+
+	.masonry-filter-holder:not(.masonry-filters--horizontal) .masonry__filters ul li.active {
+		color: #3c78d8;
+	}
+
+	.masonry-filter-holder:not(.masonry-filters--horizontal) .masonry__filters ul li:hover {
+		color: #3c78d8;
+	}
+
+	.masonry-filters--horizontal .masonry__filters ul li.active {
+		color: #3c78d8;
+	}
+
+	.wizard > .actions a,
+	.wizard > .actions a:hover,
+	.wizard > .actions a:active {
+		background: #3c78d8;
+	}
+
+	.wizard > .steps li.current a:after,
+	.wizard > .steps li.current a:before {
+		background-color: #3c78d8;
+	}
+}
+
+
+
+
+.label:not([class*='bg--']) {
+	background: #e84a27 ;
+}
+
+.label:not([class*='bg--']):hover {
+	background: #cc0000;
+}
+
+.label:not([class*='bg--']) a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+.dark-blue-btn a:hover, .dark-blue-btn .btn--primary:hover {
+background: #cc0000;
+}
+
+
+.section-cont section .container ol,
+.section-cont section .container ul {
+	margin-left: 40px !important;
+	margin-bottom: 26px !important;
+	list-style-type: disc;
+	padding-inline-start: 0px !important;
+
+}
+
+ol li:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+
+.section-cont section .container td,
+.section-cont section .container th {
+	vertical-align: top;
+}

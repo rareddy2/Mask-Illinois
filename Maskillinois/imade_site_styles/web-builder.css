@@ -1,0 +1,280 @@
+/*!
+ * This file is used to add custom style on top of the Web Builder Feature
+ * Copyright 2011-2016 Novalsys, Inc - v.1.0.0 (11/2016)
+ * Use @NameOfElement to find it.
+ */
+
+/*-----------------------------------------------------*\
+	@COMMON WEB BUILDER RULES
+\*-----------------------------------------------------*/
+html, body { height:100%; }
+
+.ct-widget.ct-toolbox { z-index: 999999;}
+.ct-widget.ct-ignition {
+	left: 10px;
+	top: 10px;
+	transition: all .15s;
+	z-index: 999999;
+}
+.ct-widget .ct-ignition__button {
+	font-size: 17px;
+	height: 38px;
+	line-height: 38px;
+	width: 38px;
+}
+.ct-widget .ct-ignition__button--edit    { left:  50px; }
+.ct-widget .ct-ignition__button--cancel  { left: 290px; }
+.ct-widget .ct-ignition__button--confirm { left: 340px; }
+.ct-widget .ct-ignition--editing { left: 90px !important; }
+
+.ct-widget.ct-inspector { height: 0px; }
+
+.ct-widget .ct-toolbox__grip { width: 85px; }
+
+.ct-toggle { float: right; }
+	.ct-toggle .btn:active { box-shadow: none; }
+	.ct-toggle .btn.btn--minus {
+		background: transparent url(/images/btns_sprite_icons.png);
+		background-position: -395px -40px;
+		cursor: pointer;
+		height: 20px;
+		width: 21px;
+	}
+	.ct-toggle .btn.btn--plus {
+		background: transparent url(/images/btns_sprite_icons.png);
+		background-position: -36px 0px;
+		cursor: pointer;
+		height: 20px;
+		width: 21px;
+	}
+
+.web-builder__button--manage {
+	background: #FF5722;
+	border-radius: 24px;
+	color: #fff;
+	content: '';
+	cursor: pointer;
+	display: block;
+	font-family: 'icon';
+	font-size: 17px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	height: 38px;
+	left: 10px;
+	line-height: 38px;
+	opacity: 0.9;
+	position: fixed;
+	speak: none;
+	text-align: center;
+	text-transform: none;
+	top: 10px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	width: 38px;
+	z-index: 10097;
+}
+.web-builder__button--manage:hover {
+	background: #DD2C00;
+}
+.web-builder__button--manage:before {
+	content: '☰'
+}
+
+/*-----------------------------------------------------*\
+	@SECTION CONTAINER
+\*-----------------------------------------------------*/
+#web-builder__sections-cont {
+	background: #CCC;
+	height: 100%;
+	left: -400px;
+	position: fixed;
+	transition: all .3s ease-out;
+	width: 400px;
+	z-index: 10098;
+}
+#web-builder__sections-cont.edit-mode {
+	left: 0px;
+}
+	#web-builder__sections-cont #web-builder__sections-instr {
+		font-size: .8em;
+		line-height: 1.4;
+	}
+		#web-builder__sections-cont #web-builder__sections-instr > p {
+			background-color: #333;
+			color: #fff;
+			display: block;
+			font-size: 1.5em;
+			font-weight: 600;
+			padding: 1.1em .8em;
+		}
+
+	#web-builder__sections-cont #web-builder__sections-tabs {
+		background: none;
+		border: 0;
+		border-radius: 0;
+		color: inherit;
+		font-family: inherit;
+		font-size: inherit;
+		margin-top: 15px;
+		height: calc(100% - 75px);
+		padding: 0;
+	}
+
+	#web-builder__sections-cont #web-builder__sections-tabs .section-cont .form-control {
+		-webkit-appearance: menulist;
+	}
+
+		#web-builder__sections-cont #web-builder__sections-tabs #web-builder__sections-list {
+			height: calc(100% - 25px);
+			padding: 0;
+		}
+
+	#web-builder__sections-cont .web-builder__sections-sortable {
+		height: 100%;
+		overflow-y: auto;
+		padding: 20px 10px;
+	}
+	#web-builder__sections-cont .section-cont {
+		margin-bottom: 10px;
+		padding: 0 12px;
+		position: relative;
+	}
+	#web-builder__sections-cont .section-cont__widget-block {
+		background: #efefef;
+		border-radius: 5px;
+		cursor: -webkit-grab;
+		cursor: grab;
+		padding: 8px;
+	}
+  #web-builder__sections-cont .section-cont__widget-block:hover {
+    box-shadow: inset 0 0 0 2px #BBB;
+	}
+	#web-builder__sections-cont .section-cont__widget-block > img {
+        border-radius: 2px;
+		height: auto;
+		transition: all .1s;
+		width: 100% !important;
+	}
+    #web-builder__sections-cont .section-cont__widget-block p {
+            color: #333;
+			margin: 0px;
+            padding: 0.4em 0 0;
+            text-align: center;
+        }
+
+    #web-builder__sections-cont .section-cont__widget-block p .badge {
+        display: inline-block;
+	    min-width: 10px;
+	    padding: 3px 7px;
+	    font-size: 12px;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-align: center;
+	    white-space: nowrap;
+	    vertical-align: middle;
+	    background-color: #777;
+	    border-radius: 10px;
+        }
+
+    #web-builder__sections-cont .section-cont__widget-block p .badge-cg--website {
+    	background-color: #0077a2 !important;
+        }
+
+	#web-builder__sections-cont .section-cont__widget-block:after {
+		bottom: 0;
+		content: "";
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all .1s;
+		z-index: 10;
+	}
+
+
+/*-----------------------------------------------------*\
+	@TEMPLATE CONTAINER
+\*-----------------------------------------------------*/
+#web-builder__tmpl-cont {
+	min-height: 500px;
+	transition: all .3s ease-out;
+ }
+ #web-builder__tmpl-cont.edit-mode { margin-left: 400px; }
+	#web-builder__tmpl-cont .section-cont { position: relative; }
+
+	#web-builder__tmpl-cont .section-cont:hover .section-cont__btns-block { display: block !important; }
+	#web-builder__tmpl-cont .section-cont--edit,
+	#web-builder__tmpl-cont .background-cont--edit,
+	#web-builder__tmpl-cont .box-cont--edit {
+		outline : 1px dotted #2980b9;
+		position: relative;
+	}
+	#web-builder__tmpl-cont .section-cont__btns-block .btn,
+	#web-builder__tmpl-cont .background-cont__btns-block .btn,
+	#web-builder__tmpl-cont .box-cont__btns-block .btn,
+	#web-builder__tmpl-cont .icon-cont__btns-block .btn {
+		background: #E9E9E9 url(/images/btns_sprite_icons.png);
+		border: 0;
+		border-radius: 0;
+		display: inline-block;
+		height: 32px;
+		vertical-align: middle;
+		width: 34px;
+	}
+ 	#web-builder__tmpl-cont .section-cont__btns-block .btn:hover,
+	#web-builder__tmpl-cont .background-cont__btns-block .btn:hover,
+	#web-builder__tmpl-cont .box-cont__btns-block .btn:hover,
+	#web-builder__tmpl-cont .icon-cont__btns-block .btn:hover {
+		background-color:#FFF;
+	}
+
+ 	#web-builder__tmpl-cont .section-cont__btns-block .btn.btn--move, #web-builder__tmpl-cont .box-cont__btns-block .btn.btn--move { background-position: -233px -153px; }
+ 	#web-builder__tmpl-cont .section-cont__btns-block .btn.btn--delete, #web-builder__tmpl-cont .box-cont__btns-block .btn.btn--delete { background-position: 9px 8px; }
+ 	#web-builder__tmpl-cont .section-cont__btns-block .btn.btn--duplicate, #web-builder__tmpl-cont .box-cont__btns-block .btn.btn--duplicate { background-position: -191px -33px; }
+
+	#web-builder__tmpl-cont .background-cont__btns-block .btn.btn--change,
+	#web-builder__tmpl-cont .icon-cont__btns-block .btn.btn--change  {
+		/*background-position: 8px -32px;*/
+		background-position: -430px -110px;
+	}
+
+	/* SPECIFIC RULE FOR BOOTSTRAP THEMES */
+	#web-builder__tmpl-cont.edit-mode .section-cont .container { width: 100%; }
+
+/*-----------------------------------------------------*\
+	@CONTENT TOOLS CUSTOMIZATIONS
+\*-----------------------------------------------------*/
+[data-editable] image,
+[data-editable] [data-ce-tag=img],
+[data-editable] img,
+[data-editable] video {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+[data-editable] image.align-left,
+[data-editable] [data-ce-tag=img].align-left,
+[data-editable] img.align-left,
+[data-editable] video.align-left {
+	clear: initial;
+	float: left;
+	margin-right: 0.5em;
+}
+
+[data-editable] image.align-right,
+[data-editable] [data-ce-tag=img].align-right,
+[data-editable] img.align-right,
+[data-editable] video.align-right {
+	clear: initial;
+	float: right;
+	margin-left: 0.5em;
+}
+
+[data-editable] .text-center { text-align: center; }
+[data-editable] .text-left { text-align: left; }
+[data-editable] .text-right { text-align: right; }
